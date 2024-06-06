@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import classNames from 'classnames';
 import { Link, useLocation } from 'react-router-dom';
 import { Todo } from '../../types/Todo';

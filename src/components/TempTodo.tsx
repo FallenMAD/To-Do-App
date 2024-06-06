@@ -8,8 +8,8 @@ type Props = {
 export const TempTodo: FC<Props> = ({ todo }) => {
   return (
     <div className="todo">
-      <label className="todo__status-label">
-        <input type="checkbox" className="todo__status" />
+      <label className="todo__status-label" htmlFor="status">
+        <input type="checkbox" className="todo__status" id="status" />
       </label>
 
       <span className="todo__title">{todo.title}</span>
