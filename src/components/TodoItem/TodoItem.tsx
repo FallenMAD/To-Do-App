@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import classNames from 'classnames';
 import { useEffect, useRef, useState } from 'react';
 import { Todo } from '../../types/Todo';
@@ -57,9 +58,8 @@ export const TodoItem: React.FC<Props> = ({
 
   return (
     <div className={classNames('todo', { completed })}>
-      <label className="todo__status-label" htmlFor="status">
+      <label className="todo__status-label">
         <input
-          id="status"
           type="checkbox"
           className="todo__status"
           defaultChecked
